@@ -1,51 +1,37 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-
-import styles from "./Navbar.module.css";
-
-import youtubeIcon from "./img/icons/icons8-youtube.svg"
-import linkedinIcon from "./img/icons/icons8-linkedin.svg"
-import behenceIcon from "./img/icons/icons8-behance.svg"
-import githubIcon from "./img/icons/icons8-github.svg"
+import React, { useState } from 'react';
+import styles from './Navbar.module.css';
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const handleScroll = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return(
-        <nav className={styles.contentNavbar}>
-            <div className={styles.logo}>
-                <h2>Wicthor Dev</h2>
-            </div>
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>Wicthor Dev</div>
+      <ul className={`${styles.menu} ${isOpen ? styles.show : ''}`}>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <FaBars className={styles.hamburger} onClick={toggleMenu} />
 
-            <ul className={styles.menu}>
-                <li onClick={() => handleScroll("header")}>
-                    Início
-                </li>
-                <li onClick={() => handleScroll("about")}>
-                    Sobre mim
-                </li>
-                <li onClick={() => handleScroll("projects")}>
-                    Projetos
-                </li>
-                <li onClick={() => handleScroll("contact")}>
-                    Contato
-                </li>
-            </ul>
-
-            {/* <div className={styles.redesIcon}>
-                        <img src={githubIcon} alt="githubIcon" />
-                        <img src={linkedinIcon} alt="linkedinIcon" />
-                        <img src={behenceIcon} alt="behenceIcon" />
-                        <img src={youtubeIcon} alt="youtubeIcon" />
-                    </div> */}
-        </nav>
-    )
-}
+      <div className={`${styles.modal} ${isOpen ? styles.show : ''}`}>
+        <AiOutlineClose className={styles.closeIcon} onClick={toggleMenu} />
+        <ul className={styles.modalMenu}>
+          <li onClick={toggleMenu}><a href="#home">Início</a></li>
+          <li onClick={toggleMenu}><a href="#about">Sobre</a></li>
+          <li onClick={toggleMenu}><a href="#projects">Projetos</a></li>
+          <li onClick={toggleMenu}><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
