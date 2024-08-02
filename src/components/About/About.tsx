@@ -20,11 +20,13 @@ const About = () => {
                 <div className={styles.aboutText}>
                     <h1>Sobre mim</h1>
                     <p> 
-                        Meu nome Wicthor, estou cursando Análise e Desenvolvimento 
-                        de Sistemas. Tenho qualificação em desenvolvimento de 
-                        software FullStack pelo Comeia Academy. Minha 
-                        inclinação maior é para o Front-End, devido ao 
-                        meu gosto por design gráfico.
+                    Meu nome é Wicthor Silva, sou formado em Análise e Desenvolvimento de Sistemas e possuo qualificação em desenvolvimento de software FullStack pelo Comeia Academy. 
+                    </p>
+                    <p>
+                    Sou uma pessoa curiosa e gosto de aprender e descobrir coisas novas. Desejo expandir meu conhecimento na área de desenvolvimento de software e contribuir para projetos que impactem positivamente a vida das pessoas.
+                    </p>
+                    <p>
+                    Gosto de trabalhar em equipe e manter uma boa comunicação, prezando pela proatividade e pela criação de um ambiente humanizado.
                     </p>
                 </div>
             </div>

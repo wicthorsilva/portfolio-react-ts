@@ -18,7 +18,7 @@ const Header = () => {
 
                 <div className={styles.titlePage}>
                     <h1>Wicthor Luiz</h1>
-                    <h4>Front-End Developer</h4>
+                    <h4>Full Stack Developer</h4>
 
                     <div className={styles.btnFalacomigo} onClick={()=>handleScroll("contact")}>
                         <h5>Fale comigo</h5>
