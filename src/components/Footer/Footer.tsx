@@ -14,15 +14,23 @@ const Footer = () => {
 
                 <div className={styles.mediaFooter}>
 
-                    <div className={styles.cardBox}>
-                        <img src={iconBehance} alt="Icon-Behance" />
-                    </div>
-                    <div className={styles.cardBox}>
-                        <img src={icongithub} alt="Icon-GitHub" />
-                    </div>
-                    <div className={styles.cardBox}>
-                        <img src={iconlinkedin} alt="Icon-linkedin" />
-                    </div>
+                    <a href="https://www.behance.net/wicthordev" target="_blank">
+                        <div className={styles.cardBox}>
+                            <img src={iconBehance} alt="Icon-Behance" />
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/wicthorsilva" target="_blank">
+                        <div className={styles.cardBox}>
+                            <img src={icongithub} alt="Icon-GitHub" />
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/wicthor-silva-b10809251/" target="_blank">
+                        <div className={styles.cardBox}>
+                            <img src={iconlinkedin} alt="Icon-linkedin" />
+                        </div>
+                    </a>
 
                 </div>
 
