@@ -89,7 +89,7 @@
     font-size: 1.5rem;
   }
  
-  
+
   @media (max-width: 850px) {
     .menu {
       display: none;
@@ -102,6 +102,12 @@
   @media (min-width: 851px) {
     .modal {
       display: none;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .logo {
+        font-size: 20px;
     }
   }
   

@@ -63,10 +63,19 @@
 @media (max-width: 400px) {
 
     .titlePage h1 {
-        font-size: 22px;
+        margin-top: 2rem;
+        font-size: 32px;
     }
 
     .titlePage h4 {
         font-size: 16px;
+        letter-spacing: 4px;
+    }
+
+    .titlePage .btnFalacomigo {
+        margin-top: 1em;
+        
+        width: 130px;
+        padding: .5em;
     }
 }
