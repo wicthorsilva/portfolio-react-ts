@@ -1,0 +1,130 @@
+.containerProjects h2{  
+    margin-left: 4.5em; 
+    color: #8B00FF;
+    font-size: 30px;
+}
+
+.containerProjects{ 
+    padding-bottom: 4.5em;
+    background-color: #121212; 
+}
+
+.contentProjects {
+    text-align: center;
+}
+
+.cardsProjects{
+    margin: auto;
+}
+
+.boxProject{
+    
+    display: inline-block;
+    height: 180px;
+    width: 320px;
+    margin: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxProject img {
+    height: 180px;
+    width: 320px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.info {
+    text-align: left;
+    height: 40px;
+    width: 320px;
+    padding: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: left;
+}
+
+.boxProject:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boxProject:hover .info{
+    height: 84px;
+    bottom: 0px;
+    background: rgb(27, 27, 27, .8);
+}
+
+/* .boxProject:hover img{
+    transform: scale(1.1) rotate(-3deg);
+} */
+
+.boxProject button{
+    font-size: 16px;
+    height: 30px;
+    width: 110px;
+    color: white;
+    background-color: rgb(32, 193, 32);
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    margin-left: .3rem;
+    cursor: pointer;
+}
+.boxProject button:hover{
+    transform: scale(1.1)
+}
+
+@media (max-width:920px) {
+    .boxProject{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .containerProjects h2{  
+        margin-left: 0em; 
+        text-align: center;
+    }
+}
+
+@media (max-width:420px){
+    .boxProject{
+        height: 150px;
+        width: 290px;
+        margin: 1rem;
+    }
+    
+    .boxProject img {
+        height: 150px;
+        width: 290px;
+        
+    }
+    
+    .info {
+        
+        height: 36px;
+        width: 290px;
+        padding: 2px;
+    }
+    
+    .info h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        
+    }
+}
