@@ -10,11 +10,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>Wicthor Dev</div>
       <ul className={`${styles.menu} ${isOpen ? styles.show : ''}`}>
-        <li><a href="#home">Início</a></li>
+        <li><a href="#header">Início</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className={`${styles.modal} ${isOpen ? styles.show : ''}`}>
         <AiOutlineClose className={styles.closeIcon} onClick={toggleMenu} />
         <ul className={styles.modalMenu}>
-          <li onClick={toggleMenu}><a href="#home">Início</a></li>
+          <li onClick={toggleMenu}><a href="#header">Início</a></li>
           <li onClick={toggleMenu}><a href="#about">Sobre</a></li>
           <li onClick={toggleMenu}><a href="#projects">Projetos</a></li>
           <li onClick={toggleMenu}><a href="#contact">Contato</a></li>
