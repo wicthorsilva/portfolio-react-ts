@@ -67,7 +67,11 @@
 } */
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+
+    .titlePage {
+        text-align: center;  
+    }
 
     .titlePage h1 {
         font-size: 32px;
@@ -82,11 +86,11 @@
         margin-top: 1em;
         width: 130px;
         height: 34px;
-        
+        text-align: center;
+        margin-left: 1.5rem;
     }
     .btnFalacomigo p {
         font-size: 16px;
-        
     }
 
     /* .titlePage {
