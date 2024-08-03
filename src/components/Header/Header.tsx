@@ -17,7 +17,7 @@ const Header = () => {
             <div className={styles.headerBackcoler}>
 
                 <div className={styles.titlePage}>
-                    <h1>Wicthor Luiz</h1>
+                    <h1>Wicthor Silva</h1>
                     <h4>Full Stack Developer</h4>
 
                     <div className={styles.btnFalacomigo} onClick={()=>handleScroll("contact")}>
