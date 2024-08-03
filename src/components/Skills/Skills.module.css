@@ -17,7 +17,7 @@
     width: 110px;
     height: 120px;
     border-radius: 20px 20px 0px 0px;
-    border-bottom: 2px solid #8B00FF;
+    border-bottom: 2px solid #7200fe;
     color: #fff;
     text-align: center;
     background: #282828;
@@ -30,6 +30,18 @@
     opacity: .7;
     margin-bottom: .7rem;
 }
+
+.containerSkills {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateX(-100%); /* Transladado para a esquerda */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
+}
+
+.containerSkills.show {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição original */
+}
+
 
 
 

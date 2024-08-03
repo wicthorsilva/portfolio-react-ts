@@ -21,7 +21,7 @@ const Header = () => {
                     <h4>Full Stack Developer</h4>
 
                     <div className={styles.btnFalacomigo} onClick={()=>handleScroll("contact")}>
-                        <h5>Fale comigo</h5>
+                        <p>Entre em contato</p>
                     </div>
 
                 </div>

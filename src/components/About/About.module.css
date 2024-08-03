@@ -14,7 +14,7 @@
 }
 
 .lineStyle{
-    border: 1px solid #8B00FF;
+    border: 1px solid #7200fe;
     margin-left: 8%;
 }
 
@@ -22,7 +22,7 @@
     /* width: 330px; */
     border-radius: 10px;
     height: 350px;
-    border: 1px solid #8B00FF;
+    border: 1px solid #7200fe;
 }
 
 
@@ -33,10 +33,10 @@
     width: 630px;
     text-align: justify;
     color: #fff;
-    /* border-left: solid 2px #8B00FF; */
+    /* border-left: solid 2px #7200fe; */
 }
 .aboutText h1{
-    color: #8B00FF;
+    color: #7200fe;
     font-size: 40px;
     margin-top: -.5rem;
     margin-bottom: 1rem;
@@ -52,7 +52,7 @@
 .contentSkills h2{  
     margin-top: 4rem;
     /* margin-left: 2rem;  */
-    color: #8B00FF;
+    color: #7200fe;
     font-size: 30px;
 }
 
@@ -98,6 +98,12 @@
     .aboutText h1{
         margin-top: 1rem;
         font-size: 30px;
+        
+    }
+
+    .contentAbout{
+        padding-top: 2.5em;
+        padding-bottom: 5em;
         
     }
 }
