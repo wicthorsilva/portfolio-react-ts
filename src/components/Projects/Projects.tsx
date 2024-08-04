@@ -1,7 +1,9 @@
 import React from "react";
 
 import styles from "./Project.module.css";
-import imghelppet from "./img/landingpage-helppet.png"
+import imghelppet from "./img/landingpage-helppet.png";
+import imgMKT from "./img/project-landpage.png";
+import imgBarber from "./img/barber-lup.png";
 
 const Projects = () => {
     return(
@@ -15,21 +17,21 @@ const Projects = () => {
                     <div className={styles.boxProject}>
                         <img src={imghelppet} alt="landing-Page"/>
                         <div className={styles.info}>
-                            <h1>Landing Page</h1>
+                            <h1>LandingPage HelpTep</h1>
                             <button>Saiba Mais</button>
                         </div>
                     </div>
                     <div className={styles.boxProject}>
-                        <img src={imghelppet} alt="landing-Page"/>
+                        <img src={imgMKT} alt="landing-Page"/>
                         <div className={styles.info}>
                             <h1>Landing Page</h1>
                             <button>Saiba Mais</button>
                         </div>
                     </div>
                     <div className={styles.boxProject}>
-                        <img src={imghelppet} alt="landing-Page"/>
+                        <img src={imgBarber} alt="landing-Page"/>
                         <div className={styles.info}>
-                            <h1>Landing Page</h1>
+                            <h1>LandingPage BarberLup</h1>
                             <button>Saiba Mais</button>
                         </div>
                     </div>
