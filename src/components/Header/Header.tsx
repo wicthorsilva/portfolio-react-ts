@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import styles from "./Header.module.css";
-import TechAnimation from "./animation/Animation - 1722826539121.json";
+import TechAnimation from "./animation/AnimationHeader.json";
 
 const Header = () => {
     const handleScroll = (id: string) => {
