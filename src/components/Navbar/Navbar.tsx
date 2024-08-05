@@ -10,7 +10,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>Wicthor Dev</div>

@@ -1,113 +1,112 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    background-color: #000000;
-    color: white;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #7200fe;
-    z-index: 999;
-  }
-  
-  .logo {
-    font-size: 24px
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #7200fe;
+  z-index: 9999; 
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: -60%;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease-in-out;
+  z-index: 10000;
+}
+
+.show {
+  right: 0;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modalMenu {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.modalMenu li {
+  margin: 1rem 0;
+}
+
+.modalMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 850px) {
   .menu {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+      display: none;
   }
-  
-  .menu li {
-    display: inline-block;
-    margin-top: .5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  
   .hamburger {
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .modal {
-    position: fixed;
-    top: 0;
-    right: -60%;
-    width: 60%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  
-  .show {
-    right: 0;
-  }
-  
-  .closeIcon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  
-  .modalMenu {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-  }
-  
-  .modalMenu li {
-    margin: 1rem 0;
-  }
-  
-  .modalMenu a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
- 
-
-  @media (max-width: 850px) {
-    .menu {
-      display: none;
-    }
-    .hamburger {
       display: block;
-    }
   }
-  
-  @media (min-width: 851px) {
-    .modal {
-      display: none;
-    }
-  }
+}
 
-  @media (max-width: 400px) {
-    .logo {
-        font-size: 20px;
-    }
+@media (min-width: 851px) {
+  .modal {
+      display: none;
   }
-  
+}
+
+@media (max-width: 400px) {
+  .logo {
+      font-size: 20px;
+  }
+}

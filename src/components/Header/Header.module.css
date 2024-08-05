@@ -1,28 +1,50 @@
-.containerHeader{
+.containerHeader {
     height: 630px;
     width: 100%;
-    background: url(./img/my-site_banner-21dev.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
+    background-color: #000000; 
+    position: relative;
     border-bottom: 1px solid #7200fe;
-    /* position: relative; */
+    overflow: hidden; 
 }
 
-.headerBackcoler{
-    background-color: rgb(32, 32, 32, .7);
-    
+.containerHeader::before {
+    content: "";
+    background-image: url(./img/my-site_banner-21dev.png);
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5; 
+    z-index: 0;
+    background-size: cover; 
+}
+
+.headerBackcoler {
+    /* background-color: rgba(10, 11, 11, 0.85);  */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.lottieBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 630px;
+    z-index: 0;
+    opacity: 0.1; 
 }
 
 .titlePage {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     margin-left: 18%;
     margin-top: 8em;
-    position: absolute;
-
-    
+    position: relative;
+    z-index: 2;
 }
 
 .titlePage h1 {
@@ -42,19 +64,17 @@
 
 .titlePage .btnFalacomigo {
     margin-top: 1em;
-    /* background-color: #7200fe; */
     border: solid 2px #7200fe;
     width: 180px;
     height: 40px;
-    /* padding: .5em; */
     text-align: center;
     align-items: center;
     border-radius: 1em;
-
     cursor: pointer;
 }
+
 .titlePage .btnFalacomigo:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     background: #991cff;
 }
 
@@ -62,18 +82,15 @@
     margin-top: .4rem;
 }
 
-/* @media (max-width: 800px) {
-
-} */
-
-
-@media (max-width: 450px) {
-
+@media (max-width: 650px) {
     .titlePage {
-        text-align: center;  
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
     }
 
     .titlePage h1 {
+        margin-left: 1rem;
         font-size: 32px;
     }
 
@@ -87,17 +104,18 @@
         width: 130px;
         height: 34px;
         text-align: center;
-        margin-left: 1.5rem;
+        margin: auto;
     }
+
     .btnFalacomigo p {
         font-size: 16px;
     }
 
-    /* .titlePage {
-        margin-top: 20rem;
-    } */
-
-    .containerHeader{
+    .containerHeader {
         height: 350px;
+    }
+
+    .lottieBackground {
+        max-height: 350px;
     }
 }
