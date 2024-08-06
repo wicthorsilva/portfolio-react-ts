@@ -6,7 +6,7 @@
 
 .containerProjects{ 
     padding-bottom: 4.5em;
-    background-color: #121212; 
+    /* background-color: #121212;  */
 
     opacity: 0; /* Inicialmente invisível */
     transform: translateX(-100%); /* Para a esquerda */

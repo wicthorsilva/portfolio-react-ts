@@ -1,5 +1,5 @@
 body {
-  background-color: #121212;
+  background: linear-gradient(135deg, #020203 0%, #01000a 70%, #0B0B0B 100%);
   color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

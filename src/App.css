@@ -4,7 +4,11 @@
 }
 
 body{
-  background-color: #121212;
+  /* background: linear-gradient(135deg, #050607 0%, #030010 50%, #0b0c10 100%); */
+  color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .App {
