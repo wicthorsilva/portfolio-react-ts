@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import styles from "./Project.module.css";
 import imghelppet from "./img/landingpage-helppet.png";
@@ -6,8 +6,36 @@ import imgMKT from "./img/project-landpage.png";
 import imgBarber from "./img/barber-lup.png";
 
 const Projects = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const projectsRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (projectsRef.current) {
+                const sectionTop = projectsRef.current.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight * 0.6;
+                if (sectionTop - windowHeight < 0) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    
     return(
-        <section id="projects" className={styles.containerProjects}>
+        <section 
+        ref={projectsRef}
+        id="projects" 
+        className={`${styles.containerProjects} ${isVisible ? styles.show : ""}`}
+        >
             <h2>Projetos</h2>
             <div className={styles.contentProjects}>
                 
