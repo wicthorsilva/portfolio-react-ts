@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./Contact.module.css";
 
 const Contact: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -10,6 +13,27 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [isFormValid, setIsFormValid] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+        if (contactRef.current) {
+            const sectionTop = contactRef.current.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight * 0.6;
+            if (sectionTop - windowHeight < 0) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+}, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -66,9 +90,14 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className={styles.sectionContact}>
+    <section id="contact" 
+    ref={contactRef}
+    className={`${styles.sectionContact} ${isVisible ? styles.show : ""}`}
+    >
+
       <div className={styles.containerContact}>
         <h2>Contato</h2>
+
         <form onSubmit={handleSubmit} className={styles.formPage} noValidate>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Nome</label>

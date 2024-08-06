@@ -4,6 +4,15 @@
     border-top-right-radius: 50px;
     padding: .5rem;
     padding-bottom: 4rem;
+
+
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateX(-100%); /* Transladado para a esquerda */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
+}
+.sectionContact.show {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0);
 }
 
 /* .containerContact {
@@ -22,7 +31,10 @@
     color: #fff;
     margin: auto;
     width: 50%;
+
 }
+
+
 
 .colDiv{
     margin-top: 10px;
