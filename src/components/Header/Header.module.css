@@ -5,6 +5,7 @@
     position: relative;
     border-bottom: 1px solid #7200fe;
     overflow: hidden; 
+    background-attachment: fixed;
 }
 
 .containerHeader::before {
@@ -13,6 +14,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    background-attachment: fixed;
     top: 0;
     left: 0;
     opacity: 0.5; 
@@ -26,10 +28,13 @@
     height: 100%;
     position: relative;
     z-index: 1;
+    
 }
 
 .lottieBackground {
     position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100%;

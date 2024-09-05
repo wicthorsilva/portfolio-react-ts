@@ -1,12 +1,11 @@
 .sectionContact{
-    /* background-color: #0B0B0B; */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: .5rem;
     padding-bottom: 4rem;
 
 
-    opacity: 0; /* Inicialmente invisível */
+    opacity: 0; 
     transform: translateX(-100%); /* Transladado para a esquerda */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
 }
@@ -30,7 +29,7 @@
 .formPage {
     color: #fff;
     margin: auto;
-    width: 50%;
+    width: 550px;
 
 }
 
