@@ -124,3 +124,10 @@
         max-height: 350px;
     }
 }
+
+
+@media (min-width: 1500px) {
+    .containerHeader {
+        height: 840px;
+    }
+}
