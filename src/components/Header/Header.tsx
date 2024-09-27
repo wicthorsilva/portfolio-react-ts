@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import styles from "./Header.module.css";
 import TechAnimation from "./animation/AnimationHeader.json";
+import Photo from "./img/Intelligence-Technology.png";
 
 const Header = () => {
     const handleScroll = (id: string) => {
@@ -20,13 +21,23 @@ const Header = () => {
                     loop 
                     autoplay 
                 />
-                <div className={styles.titlePage}>
-                    <h1>Wicthor Silva</h1>
-                    <h4>Full Stack Developer</h4>
-                    <div className={styles.btnFalacomigo} onClick={() => handleScroll("contact")}>
-                        <p>Entre em contato</p>
+
+                <div className={styles.titleAndImg}>
+                    <div className={styles.titlePage}>
+                        <h1>Olá, meu nome é Wicthor</h1>
+                        <h4>Sou desenvolvedor Full Stack</h4>
+                        
+                        <div className={styles.btnFalacomigo} onClick={() => handleScroll("contact")}>
+                            <p>Entre em contato</p>
+                        </div>
                     </div>
+                    <div className={styles.circle}>
+                        <img src={Photo} alt="Foto" />
+                    </div>
+
+                    <div className={styles.circle2}></div>
                 </div>
+
             </div>
         </header>
     );
