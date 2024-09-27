@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Wicthor Dev</div>
+      <div className={styles.logo}><a href='/'>Wicthor Dev</a></div>
       <ul className={`${styles.menu} ${isOpen ? styles.show : ''}`}>
         <li><a href="#header">Início</a></li>
         <li><a href="#about">Sobre</a></li>

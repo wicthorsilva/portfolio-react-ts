@@ -137,3 +137,15 @@
         
     }
 }
+
+@media (min-width: 1540px) {
+    .contentProjects {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .containerProjects h2{  
+        margin-left: 320px; 
+        /* text-align: center; */
+    }
+}

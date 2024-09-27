@@ -72,3 +72,15 @@
         margin-bottom: .7rem;
     }
 }
+
+@media (min-width: 1540px) {
+    .contentCards {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .containerSkills h2{  
+        margin-left: 320px; 
+        /* text-align: center; */
+    }
+}
