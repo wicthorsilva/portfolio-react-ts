@@ -8,16 +8,18 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import LandingPage from './pages/LandingPage'
+import AnimatedCircuitBackground from './components/CircuitBackground/AnimatedCircuitBackground'
 
 
 function App() {
 
   return (
-      <BrowserRouter>
-        <Navbar />
-          <LandingPage />
-        <Footer />
-      </BrowserRouter>
+    <BrowserRouter>
+      <AnimatedCircuitBackground />
+      <Navbar />
+      <LandingPage />
+      <Footer />
+    </BrowserRouter>
   )
 }
 

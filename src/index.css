@@ -1,15 +1,29 @@
 body {
-  background: linear-gradient(135deg, #020203 0%, #01000a 70%, #0B0B0B 100%);
-  color: white;
+  background: linear-gradient(110deg, #0d1117, #11101a, #021120, #0b0c10);
+  background-size: 400% 400%;
+  animation: animatedGradient 12s ease infinite;
+  color: #c9d1d9;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
