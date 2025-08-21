@@ -4,6 +4,7 @@ import styles from "./Project.module.css";
 import imgHelppet from "./img/landingpage-helppet.png";
 import imgMKT from "./img/project-landpage.png";
 import imgBarber from "./img/barber-lup.png";
+import imgSentinel from "./img/telalogin-sentinel.png";
 
 const projectList = [
     {
@@ -29,6 +30,14 @@ const projectList = [
         tags: ["HTML", "CSS", "JavaScript"],
         github: "https://github.com/wicthorsilva/project-barberlup",
         demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
+    },
+    {
+        title: "NetSentinel",
+        description: "Aplicação de escaneamento de rede interna para ajudar no monitoramento.",
+        image: imgSentinel,
+        tags: ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
+        // github: "https://github.com/wicthorsilva/project-barberlup",
+        demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
     }
 ];
 
@@ -52,7 +61,7 @@ const Projects = () => {
 
                             <div className={styles.links}>
                                 {proj.github && <a href={proj.github} target="_blank" rel="noreferrer">GitHub</a>}
-                                {proj.demo && <a href={proj.demo} target="_blank" rel="noreferrer">Demo</a>}
+                                {proj.demo && <a href={proj.demo} target="_blank" rel="noreferrer">Ver Mais</a>}
                             </div>
                         </div>
                     </div>
