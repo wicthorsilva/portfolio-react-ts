@@ -37,7 +37,7 @@ const projectList = [
         image: imgSentinel,
         tags: ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
         // github: "https://github.com/wicthorsilva/project-barberlup",
-        demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
+        demo: "#"
     }
 ];
 
