@@ -3,6 +3,7 @@
   padding: 25px;
   background-color: rgba(1, 4, 9, 0.4);
   border-left: 4px solid #7200fe;
+  border-bottom: 0.4px solid var(--accent-color);
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }

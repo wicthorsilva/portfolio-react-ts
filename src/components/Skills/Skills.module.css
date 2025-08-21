@@ -1,6 +1,7 @@
 .containerSkills {
-  background-color: rgba(1, 4, 9, 0.4);
+  background-color: rgba(15, 5, 43, 0.4);
   border-left: 4px solid var(--accent-color);
+  border-bottom: 0.4px solid var(--accent-color);
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   padding: 25px;
@@ -61,7 +62,7 @@
 
 /* Card */
 .boxCard {
-  background-color: #070707;
+  background-color: rgba(15, 5, 43, 0.2);
   border: 1px solid var(--border-color);
   border-radius: 20px 20px 0px 0px;
   padding: 1.2em 0.5em;

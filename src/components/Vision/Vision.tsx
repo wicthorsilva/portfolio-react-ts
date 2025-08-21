@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Vision.module.css";
+import CommitRail from "../Decor/CommitRail";
 
 const Vision = () => {
     return (
         <section id="vision" className={styles.section}>
+            <CommitRail accent="#79c0ff" nodes={[12, 38, 64, 88]} merges={[{ y: 25, side: "left" }, { y: 55, side: "right" }]} />
             <h2>
                 <span className={styles.hash}>#</span> Visão e Foco
             </h2>

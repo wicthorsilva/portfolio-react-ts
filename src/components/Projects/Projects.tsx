@@ -10,9 +10,9 @@ const projectList = [
         title: "LandingPage HelpTep",
         description: "Plataforma de agendamento com interface simples e responsiva.",
         image: imgHelppet,
-        tags: ["React", "CSS", "Responsivo"],
-        github: "https://github.com/seuusuario/helptep",
-        demo: "#"
+        tags: ["React", "TypeScript", "CSS"],
+        github: "https://github.com/wicthorsilva/HelpPet-landingpage",
+        demo: "https://help-pet-landingpage.vercel.app/"
     },
     {
         title: "Landing Page Marketing",
@@ -26,9 +26,9 @@ const projectList = [
         title: "LandingPage BarberLup",
         description: "Site institucional para barbearia com agendamento online.",
         image: imgBarber,
-        tags: ["React", "Firebase"],
-        github: "https://github.com/seuusuario/barberlup",
-        demo: "#"
+        tags: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/wicthorsilva/project-barberlup",
+        demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
     }
 ];
 

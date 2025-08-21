@@ -1,8 +1,9 @@
 .projectsSection {
   padding: 3rem 1rem;
-  margin-top: 30px;
+  margin-top: 5rem;
   background-color: rgba(1, 4, 9, 0.4);
   border-left: 4px solid var(--accent-color);
+  border-bottom: 0.4px solid var(--accent-color);
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -29,8 +30,9 @@
 }
 
 .projectCard {
-  background-color: rgba(10, 10, 15, 0.85);
-  border: 1px solid #292929;
+  /* background-color: rgba(10, 10, 15, 0.85); */
+  background-color: #161b22;
+  border: 1px solid #30363d;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -57,7 +59,7 @@
 
 .projectTitle {
   font-family: 'Orbitron', sans-serif; /* Como no projeto inspiração */
-  color: #7200fe;
+  color: #58a6ff;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   /* text-shadow: 0 0 5px rgba(88, 166, 255, 0.3); */
@@ -105,8 +107,8 @@
 
 .links a {
   background-color: transparent;
-  color: #7200fe;
-  border: 1px solid #7200fe;
+  color: #a3a3a3;
+  border: .5px solid #30363d;
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 0.85rem;

@@ -9,6 +9,13 @@ import reactIcon from "./icons/icons8-react-96.png";
 import nodeIcon from "./icons/icons8-nodejs.svg";
 import tsIcon from "./icons/icons8-typescript.svg";
 import bootstrapIcon from "./icons/icons8-bootstrap.svg";
+import figmaIcon from "./icons/icons8-figma.svg";
+import muiIcon from "./icons/icons8-material-ui.svg";
+import viteIcon from "./icons/icons8-vite.svg";
+import mySqlIcon from "./icons/icons8-mysql-96.png";
+import postgresIcon from "./icons/icons8-postgres.svg";
+import ElementoIcon from "./icons/icons8-elementor.svg";
+import wordpresIcon from "./icons/icons8-wordpress.svg";
 
 interface Skill {
   icon: string;
@@ -18,15 +25,18 @@ interface Skill {
 const skillsData: Skill[] = [
   { icon: htmlIcon, name: "HTML5" },
   { icon: cssIcon, name: "CSS3" },
+  { icon: muiIcon, name: "Material UI" },
+  { icon: bootstrapIcon, name: "Bootstrap" },
   { icon: jsIcon, name: "JavaScript" },
   { icon: tsIcon, name: "TypeScript" },
   { icon: reactIcon, name: "React" },
+  { icon: viteIcon, name: "Vite" },
   { icon: nodeIcon, name: "Node.js" },
-  { icon: nodeIcon, name: "Node.js" },
-  { icon: nodeIcon, name: "Node.js" },
-  { icon: nodeIcon, name: "Node.js" },
-  { icon: nodeIcon, name: "Node.js" },
-  { icon: bootstrapIcon, name: "Bootstrap" },
+  { icon: figmaIcon, name: "Figma" },
+  { icon: mySqlIcon, name: "MySQL" },
+  { icon: postgresIcon, name: "PostgreSQL" },
+  { icon: wordpresIcon, name: "Wordpres" },
+  
 ];
 
 const Skills = () => {
