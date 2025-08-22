@@ -1,3 +1,23 @@
 .containerPage {
-    background: linear-gradient(135deg, #03000c 0%, #02000c 50%, #0b0c10 100%);
+  /* background-color: var(--primary-color); */
+  padding: 30px 40px;
+  border-radius: 8px;
+  max-width: 75%;
+  margin: 20px auto;
+  width: 100%;
+  /* box-shadow: 0 0 30px rgba(0,0,0,0.3), 0 0 15px var(--glow-color); */
+  /* border: 1px solid var(--border-color); */
+} 
+
+
+@media (max-width: 850px) {
+  .containerPage{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerPage{
+    padding: 10px 6px;
+  }
 }

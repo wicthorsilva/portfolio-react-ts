@@ -24,8 +24,8 @@ const Header = () => {
 
                 <div className={styles.titleAndImg}>
                     <div className={styles.titlePage}>
-                        <h1>Olá, meu nome é Wicthor</h1>
-                        <h4>Sou desenvolvedor Full Stack</h4>
+                        <h1><span>&#123;</span>Wicthor Silva<span>&#125;</span></h1>
+                        <h4>Desenvolvedor Full Stack</h4>
                         
                         <div className={styles.btnFalacomigo} onClick={() => handleScroll("contact")}>
                             <p>Entre em contato</p>

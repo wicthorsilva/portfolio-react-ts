@@ -1,0 +1,29 @@
+.rail {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0; /* atrás do conteúdo da seção */
+}
+
+.svg {
+  position: absolute;
+  left: -46px;     /* aproxima do conteúdo; ajuste fino conforme seu layout */
+  top: 0;
+  height: 100%;
+  width: 84px;     /* largura do trilho */
+  opacity: 1;
+}
+
+.dashed {
+  stroke-dasharray: 4 6;
+  animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: -240; }
+}
+
+/* some em telas pequenas pra não poluir */
+@media (max-width: 900px) {
+  .svg { display: none; }
+}

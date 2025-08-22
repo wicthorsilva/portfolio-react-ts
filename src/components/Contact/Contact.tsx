@@ -8,7 +8,6 @@ const Contact: React.FC = () => {
 
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
     email: '',
     message: ''
   });
@@ -16,24 +15,24 @@ const Contact: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-        if (contactRef.current) {
-            const sectionTop = contactRef.current.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight * 0.6;
-            if (sectionTop - windowHeight < 0) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
+      if (contactRef.current) {
+        const sectionTop = contactRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight * 0.6;
+        if (sectionTop - windowHeight < 0) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
         }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
     return () => {
-        window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-}, []);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -81,8 +80,8 @@ const Contact: React.FC = () => {
   };
 
   const sendToWhatsApp = () => {
-    const { name, phone, email, message } = formData;
-    const text = `Nome: ${name}\nE-mail: ${email}\nTelefone: ${phone}\nMensagem: ${message}`;
+    const { name, email, message } = formData;
+    const text = `Nome: ${name}\nE-mail: ${email}\nMensagem: ${message}`;
     const encodedText = encodeURIComponent(text);
     const whatsappNumber = '5581999510178';
     const url = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
@@ -90,45 +89,33 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" 
-    ref={contactRef}
-    className={`${styles.sectionContact} ${isVisible ? styles.show : ""}`}
+    <section id="contact"
+      ref={contactRef}
+      className={`${styles.sectionContact} ${isVisible ? styles.show : ""}`}
     >
 
       <div className={styles.containerContact}>
-        <h2>Contato</h2>
+        <h2><span className={styles.hash}>#</span>Contato</h2>
 
         <form onSubmit={handleSubmit} className={styles.formPage} noValidate>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">Nome</label>
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <div className={styles.colDiv}>
-              <label htmlFor="phone" className="form-label">Telefone</label>
+          <div className={styles.flexRow}>
+            <div className={styles.flexCol}>
+              <label htmlFor="name">Nome</label>
               <input
                 type="text"
-                className="form-control"
-                id="phone"
-                name="phone"
-                value={formData.phone}
+                id="name"
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className={styles.colDiv}>
-              <label htmlFor="email" className="form-label">Email</label>
+
+            <div className={styles.flexCol}>
+              <label htmlFor="email">Email</label>
               <input
+                
                 type="email"
-                className="form-control"
                 id="email"
                 name="email"
                 value={formData.email}
@@ -137,10 +124,12 @@ const Contact: React.FC = () => {
               />
             </div>
           </div>
+
+
           <div className="mb-3">
-            <label htmlFor="message" className="form-label">Mensagem</label>
+            <label htmlFor="message">Mensagem</label> <br />
             <textarea
-              className="form-control"
+              style={{ width: "100%" }}
               id="message"
               name="message"
               rows={5}
@@ -150,7 +139,7 @@ const Contact: React.FC = () => {
             ></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-primary">Enviar</button>
+            <button className={styles.btnContact} type="submit" >Enviar</button>
           </div>
         </form>
         {!isFormValid && <p className={styles.error}>Por favor, preencha todos os campos corretamente.</p>}
