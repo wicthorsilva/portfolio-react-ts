@@ -1,0 +1,34 @@
+[
+    {
+        "title": "LandingPage HelpTep",
+        "description": "Plataforma de agendamento com interface simples e responsiva.",
+        "image": "/img/landingpage-helppet.png",
+        "tags": ["React", "TypeScript", "CSS"],
+        "github": "https://github.com/wicthorsilva/HelpPet-landingpage",
+        "demo": "https://help-pet-landingpage.vercel.app/"
+    },
+    {
+        "title": "Landing Page Marketing",
+        "description": "Página para apresentação de serviços com foco em conversão.",
+        "image": "/img/project-landpage.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "github": "https://github.com/seuusuario/marketing",
+        "demo": "#"
+    },
+    {
+        "title": "LandingPage BarberLup",
+        "description": "Site institucional para barbearia com agendamento online.",
+        "image": "img/barber-lup.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "github": "https://github.com/wicthorsilva/project-barberlup",
+        "demo": "https://wicthorsilva.github.io/project-barberlup/index.html"
+    },
+    {
+        "title": "NetSentinel",
+        "description": "Aplicação de escaneamento de rede interna para ajudar no monitoramento.",
+        "image": "img/telalogin-sentinel.png",
+        "tags": ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
+        
+        "demo": "#"
+    }
+]

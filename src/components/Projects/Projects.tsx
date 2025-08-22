@@ -1,45 +1,47 @@
 import React from "react";
 import styles from "./Project.module.css";
 
-import imgHelppet from "./img/landingpage-helppet.png";
-import imgMKT from "./img/project-landpage.png";
-import imgBarber from "./img/barber-lup.png";
-import imgSentinel from "./img/telalogin-sentinel.png";
+// import imgHelppet from "./img/landingpage-helppet.png";
+// import imgMKT from "./img/project-landpage.png";
+// import imgBarber from "./img/barber-lup.png";
+// import imgSentinel from "./img/telalogin-sentinel.png";
 
-const projectList = [
-    {
-        title: "LandingPage HelpTep",
-        description: "Plataforma de agendamento com interface simples e responsiva.",
-        image: imgHelppet,
-        tags: ["React", "TypeScript", "CSS"],
-        github: "https://github.com/wicthorsilva/HelpPet-landingpage",
-        demo: "https://help-pet-landingpage.vercel.app/"
-    },
-    {
-        title: "Landing Page Marketing",
-        description: "Página para apresentação de serviços com foco em conversão.",
-        image: imgMKT,
-        tags: ["HTML", "CSS", "JavaScript"],
-        github: "https://github.com/seuusuario/marketing",
-        demo: "#"
-    },
-    {
-        title: "LandingPage BarberLup",
-        description: "Site institucional para barbearia com agendamento online.",
-        image: imgBarber,
-        tags: ["HTML", "CSS", "JavaScript"],
-        github: "https://github.com/wicthorsilva/project-barberlup",
-        demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
-    },
-    {
-        title: "NetSentinel",
-        description: "Aplicação de escaneamento de rede interna para ajudar no monitoramento.",
-        image: imgSentinel,
-        tags: ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
-        // github: "https://github.com/wicthorsilva/project-barberlup",
-        demo: "#"
-    }
-];
+import projectList from "./projectList.json";
+
+// const projectList = [
+//     {
+//         title: "LandingPage HelpTep",
+//         description: "Plataforma de agendamento com interface simples e responsiva.",
+//         image: imgHelppet,
+//         tags: ["React", "TypeScript", "CSS"],
+//         github: "https://github.com/wicthorsilva/HelpPet-landingpage",
+//         demo: "https://help-pet-landingpage.vercel.app/"
+//     },
+//     {
+//         title: "Landing Page Marketing",
+//         description: "Página para apresentação de serviços com foco em conversão.",
+//         image: imgMKT,
+//         tags: ["HTML", "CSS", "JavaScript"],
+//         github: "https://github.com/seuusuario/marketing",
+//         demo: "#"
+//     },
+//     {
+//         title: "LandingPage BarberLup",
+//         description: "Site institucional para barbearia com agendamento online.",
+//         image: imgBarber,
+//         tags: ["HTML", "CSS", "JavaScript"],
+//         github: "https://github.com/wicthorsilva/project-barberlup",
+//         demo: "https://wicthorsilva.github.io/project-barberlup/index.html"
+//     },
+//     {
+//         title: "NetSentinel",
+//         description: "Aplicação de escaneamento de rede interna para ajudar no monitoramento.",
+//         image: imgSentinel,
+//         tags: ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
+//         // github: "https://github.com/wicthorsilva/project-barberlup",
+//         demo: "#"
+//     }
+// ];
 
 const Projects = () => {
     return (

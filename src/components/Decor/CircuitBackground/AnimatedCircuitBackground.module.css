@@ -1,0 +1,59 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;           /* sempre atrás do conteúdo */
+  pointer-events: none;  /* não captura cliques */
+}
+
+/* grade sutil, estilo “tech” */
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1.2px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.02) 1.2px, transparent 0);
+  background-size: 26px 26px, 13px 13px;
+}
+
+/* clusters */
+.cluster {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  opacity: .7;
+}
+
+.topLeft {
+  top: 9px;
+  left: -20px;
+}
+
+.bottomRight {
+  right: -20px;
+  bottom: -40px;
+}
+
+/* animação do traçado (sutil) */
+.dash {
+  stroke-dasharray: 7 8;
+  animation: dash 12s linear infinite;
+}
+@keyframes dash { to { stroke-dashoffset: -300; } }
+
+/* pulsação dos nós */
+.pulse {
+  fill: #7200fe;
+  opacity: 0.35;
+  animation: pulse 2.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { r: 4.2; opacity: 0.25; }
+  50%     { r: 5.2; opacity: 0.5; }
+}
+
+/* Esconde clusters em telas estreitas para não poluir */
+@media (max-width: 980px) {
+  .cluster { display: none; }
+}
+/* Se quiser forçar exibir no mobile, use a prop e essa classe: */
+.mobileOn .cluster { display: block; }
