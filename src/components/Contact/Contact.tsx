@@ -139,7 +139,7 @@ const Contact: React.FC = () => {
             ></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" >Enviar</button>
+            <button className={styles.btnContact} type="submit" >Enviar</button>
           </div>
         </form>
         {!isFormValid && <p className={styles.error}>Por favor, preencha todos os campos corretamente.</p>}

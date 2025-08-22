@@ -115,6 +115,16 @@
   transition: all 0.3s;
   text-decoration: none;
 }
+.links button {
+  background-color: transparent;
+  color: #a3a3a3;
+  border: .5px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  text-decoration: none;
+}
 
 .links a:hover {
   background-color: #7200fe;

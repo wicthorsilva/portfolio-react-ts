@@ -77,7 +77,7 @@ textarea:focus {
   box-shadow: 0 0 8px rgba(114, 0, 254, 0.3);
 }
 
-button {
+.btnContact {
   background-color: rgba(88, 166, 255, 0.15); 
   border: 1px solid rgba(88, 166, 255, 0.3);
   border-radius: 4px;
@@ -90,7 +90,7 @@ button {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
+.btnContact:hover {
   background-color: #5e00d3;
   transform: scale(1.05);
 }

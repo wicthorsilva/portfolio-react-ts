@@ -1,34 +1,52 @@
 [
     {
         "title": "LandingPage HelpTep",
-        "description": "Plataforma de agendamento com interface simples e responsiva.",
-        "image": "/img/landingpage-helppet.png",
-        "tags": ["React", "TypeScript", "CSS"],
+        "description": "Adote um Pet.",
+        "images": [
+            "/img/landingpage-helppet.png",
+            "/img/help-pet01.png"
+        
+        ],
+        "tags": [
+            "React",
+            "TypeScript",
+            "CSS"
+        ],
         "github": "https://github.com/wicthorsilva/HelpPet-landingpage",
-        "demo": "https://help-pet-landingpage.vercel.app/"
-    },
-    {
-        "title": "Landing Page Marketing",
-        "description": "Página para apresentação de serviços com foco em conversão.",
-        "image": "/img/project-landpage.png",
-        "tags": ["HTML", "CSS", "JavaScript"],
-        "github": "https://github.com/seuusuario/marketing",
-        "demo": "#"
+        "demo": "https://help-pet-landingpage.vercel.app/",
+        "details": ""
     },
     {
         "title": "LandingPage BarberLup",
         "description": "Site institucional para barbearia com agendamento online.",
-        "image": "img/barber-lup.png",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "images": [
+            "img/barber-lup.png"
+        ],
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
         "github": "https://github.com/wicthorsilva/project-barberlup",
         "demo": "https://wicthorsilva.github.io/project-barberlup/index.html"
     },
     {
         "title": "NetSentinel",
         "description": "Aplicação de escaneamento de rede interna para ajudar no monitoramento.",
-        "image": "img/telalogin-sentinel.png",
-        "tags": ["React", "TypeScript", "CSS", "node.js", "TypeORM", "Python", "nmap"],
-        
+        "images": [
+            "img/telalogin-sentinel.png",
+            "img/scan-rede.png",
+            "img/tela-dispositivos-agente.png"
+        ],
+        "tags": [
+            "React",
+            "TypeScript",
+            "CSS",
+            "node.js",
+            "TypeORM",
+            "Python",
+            "nmap"
+        ],
         "demo": "#"
     }
 ]
